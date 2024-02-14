@@ -43,7 +43,16 @@ Tab:AddButton({
 		Image = "rbxassetid://4483345998",
 		Time = 5
 	})
-      		print("You are good for select hosvile")                   loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry",true))()
+      		print("You are good for select hosvile")                 getgenv().config = getgenv().config or {
+				hit_time = 0.58, -- // recommended 0.25 to 0.75 \\ --
+				
+				mode = 'Always', -- // Hold , Toggle , Always \\ --
+				deflect_type = 'Remote', -- // Key Press , Remote \\ --
+				notifications = true,
+				keybind = Enum.KeyCode.V
+			   }
+			   
+			   loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
 	end    
 })
 Tab:AddButton({
@@ -57,6 +66,14 @@ Tab:AddButton({
       		print("So.....")                    loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/AutoBlock"))()
 	end    
 })
+
+Tab:AddButton({
+	Name = "Auto Spam",
+	Callback = function()               
+ print("button pressed")                loadstring(game:HttpGet("https://pastebin.com/raw/t2391h1A"))()
+  	end    
+})
+
 
 Tab:AddButton({
 	Name = "Mobile Spam Button",
