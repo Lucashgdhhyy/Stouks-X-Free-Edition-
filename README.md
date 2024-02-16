@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Stouks X [Versão Gratis]", HidePremium = false, SaveConfig = false, ConfigFolder = "Blade Ball"})
+local Window = OrionLib:MakeWindow({Name = "Stouks X [Blade Ball]", HidePremium = false, SaveConfig = false, ConfigFolder = "Blade Ball"})
 local Tab = Window:MakeTab({
 	Name = "Discord",
 	Icon = "rbxassetid://4483345998",
@@ -34,17 +34,17 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
+  
 Tab:AddButton({
-	Name = "Auto Parry Hosvile",
+	Name = "Auto Parry 95%",
 	Callback = function()               OrionLib:MakeNotification({
 		Name = "Executado",
 		Content = "Obrigado por escolher o Stouks X",
 		Image = "rbxassetid://4483345998",
 		Time = 5
-	})
-      		print("You are good for select hosvile")                 getgenv().config = getgenv().config or {
-				hit_time = 0.58, -- // recommended 0.25 to 0.75 \\ --
+	})                   
+      		print("button pressed")                getgenv().config = getgenv().config or {
+				hit_time = 0.68, -- // recommended 0.25 to 0.75 \\ --
 				
 				mode = 'Always', -- // Hold , Toggle , Always \\ --
 				deflect_type = 'Remote', -- // Key Press , Remote \\ --
@@ -53,24 +53,18 @@ Tab:AddButton({
 			   }
 			   
 			   loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
-	end    
+  	end    
 })
+
 Tab:AddButton({
-	Name = "Auto Parry Red Circle",
+	Name = "Auto Spam",
 	Callback = function()               OrionLib:MakeNotification({
 		Name = "Executado",
 		Content = "Obrigado por escolher o Stouks X",
 		Image = "rbxassetid://4483345998",
 		Time = 5
-	})                         
-      		print("So.....")                    loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/AutoBlock"))()
-	end    
-})
-
-Tab:AddButton({
-	Name = "Auto Spam",
-	Callback = function()               
- print("button pressed")                loadstring(game:HttpGet("https://pastebin.com/raw/t2391h1A"))()
+	})                   
+      		print("button pressed")                loadstring(game:HttpGet("https://pastebin.com/raw/t2391h1A"))()
   	end    
 })
 
@@ -105,7 +99,7 @@ Tab:AddButton({
 			end
 			
 			local function showNotification()
-				game.StarterGui:SetCore("SendNotification", {Title = "Active or Desabilited", Text = "Made By Stouks X", Duration = 1})
+				game.StarterGui:SetCore("SendNotification", {Title = "", Text = "Made By Stouks X", Duration = 1})
 			end
 			
 			button.MouseButton1Click:Connect(function()
@@ -125,7 +119,7 @@ Tab:AddDropdown({
 })
 
 Tab:AddBind({
-	Name = "Tecla spamm pc",
+	Name = "Tecla spam pc",
 	Default = Enum.KeyCode.E,
 	Hold = false,
 	Callback = function()      
@@ -145,8 +139,8 @@ Tab:AddToggle({
 	Default = false,
 	Callback = function(Value)
 		print(Value)                 OrionLib:MakeNotification({
-			Name = "Espera nossa segurança detectou algo",
-			Content = "Espere o evento começar para pegar o premium",
+			Name = "Espera Esta funçao nao esta pronta",
+			Content = "Somente Admins tem acesso",
 			Image = "rbxassetid://4483345998",
 			Time = 5
 		})
